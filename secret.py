@@ -12,6 +12,7 @@ idx = 0
 
 def is_prime(n):
 
+	# https://en.wikipedia.org/wiki/Primality_test
     if n == 2:
         return True
     elif n % 2 == 0 or n <= 1:
@@ -44,10 +45,6 @@ def get_primes_less_than(integer):
 def secret(integer):
 	return integer
 
-# test not additive function
-
-# def secret(integer):
-# 	return integer**3
 
 # progress animation for a large prime list 
 def progress(count, total, suffix=''):
@@ -86,8 +83,9 @@ def is_secret_additive(integer):
 
 	return True
 
-def main():
-	
+
+def run_secret_additive():
+
 	run = True
 
 	while run:
@@ -105,18 +103,23 @@ def main():
 				# handle fractional
 				number = int(user_input)
 
-				additive = is_secret_additive(number)
-
-				# overwrite progress bar
-				print("                                                                                              ")
-
-				if additive:
-					print("\rFunction is additive!")
+				if number < 0:
+					print("Input integer must be positive and a prime numer")
+				elif number < 3:
+					print("Not enough prime numbers exists that are less than",str(number))
 				else:
-					print("\rFunction is NOT additive!")
+					additive = is_secret_additive(number)
+
+					# overwrite progress bar
+					print("                                                                                              ")
+
+					if additive:
+						print("\rSecret is additive!")
+					else:
+						print("\rSecret is NOT additive!")
 
 			except ValueError:
-				print("Please enter a number!")
+				print("Please enter an integer!")
 
-	
-main()
+if __name__ == '__main__':
+    run_secret_additive()
