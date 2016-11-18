@@ -8,8 +8,6 @@
 import time
 import sys
 
-idx = 0
-
 def is_prime(n):
 
 	# https://en.wikipedia.org/wiki/Primality_test
