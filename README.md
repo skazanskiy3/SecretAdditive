@@ -13,7 +13,7 @@ To run the command line program:
 
 `$ python3 secret.py`
 
-Change secret function on line 15 in secret.py
+To update secret function, see line 13 in secret.py
 
 To run tests:
 
