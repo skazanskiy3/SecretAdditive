@@ -4,7 +4,6 @@ import sys
 from io import StringIO
 from secret import *
 
-
 class TestPrimes(unittest.TestCase):
 
     def test_primer_under200(self):

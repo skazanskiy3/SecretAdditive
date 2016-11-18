@@ -104,9 +104,9 @@ def run_secret_additive():
 				number = int(user_input)
 
 				if number < 0:
-					print("Input integer must be positive and a prime numer")
+					print("\nInput integer must be positive and a prime numer")
 				elif number < 3:
-					print("Not enough prime numbers exists that are less than",str(number))
+					print("\nNot enough prime numbers exists that are less than",str(number))
 				else:
 					additive = is_secret_additive(number)
 
@@ -119,7 +119,7 @@ def run_secret_additive():
 						print("\rSecret is NOT additive!")
 
 			except ValueError:
-				print("Please enter an integer!")
+				print("\nYour input was not an integer!")
 
 if __name__ == '__main__':
     run_secret_additive()
