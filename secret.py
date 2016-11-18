@@ -8,6 +8,13 @@
 import time
 import sys
 
+#### SECRET FUNCTION #####
+
+def secret(integer):
+	return integer*5
+	
+##########################
+
 def is_prime(n):
 
 	# https://en.wikipedia.org/wiki/Primality_test
@@ -40,10 +47,6 @@ def get_primes_less_than(integer):
 
 	return prime_list
 
-def secret(integer):
-	return integer
-
-
 # progress animation for a large prime list 
 def progress(count, total, suffix=''):
     bar_len = 60
@@ -54,7 +57,6 @@ def progress(count, total, suffix=''):
 
     sys.stdout.write('Processing [%s] %s%s %s\r' % (bar, percents, '%', suffix))
     sys.stdout.flush() 
-
 
 def is_secret_additive(integer):
 
