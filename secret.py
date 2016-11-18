@@ -104,7 +104,7 @@ def run_secret_additive():
 				if number < 1:
 					print("\nInput integer must be positive!")
 				elif number < 3:
-					print("\nNot enough prime numbers exists that are less than",str(number))
+					print("\nNot enough prime numbers exist that are less than",str(number))
 				else:
 					additive = is_secret_additive(number)
 
