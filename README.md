@@ -7,12 +7,14 @@ where x and y are all prime numbers less than the number passed via the command-
 
 ## Running the Command Line Program
 
+Built on Python 3.5.2
+
 To run the command line program:
 
-`$ python secret.py`
+`$ python3 secret.py`
 
 To run tests:
 
-`$ python secret_unit_test.py`
+`$ python3 secret_unit_test.py`
 
 
