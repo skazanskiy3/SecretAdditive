@@ -5,6 +5,10 @@ In your favorite programming language, write a command-line program that takes o
 and determines if the secret() function is additive [secret(x+y) = secret(x) + secret(y)], for all combinations x and y, 
 where x and y are all prime numbers less than the number passed via the command-line argument.  
 
+## Dependecies
+
+https://www.python.org/downloads/
+
 ## Running the Command Line Program
 
 Built on Python 3.5.2
