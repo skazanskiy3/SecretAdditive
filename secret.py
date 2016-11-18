@@ -12,7 +12,7 @@ import sys
 
 def secret(integer):
 	return integer*5
-	
+
 ##########################
 
 def is_prime(n):
@@ -42,8 +42,6 @@ def get_primes_less_than(integer):
 		# if prime then add to list
 		if is_prime(i):
 			prime_list.append(i)
-
-	# print(prime_list)
 
 	return prime_list
 
@@ -100,11 +98,11 @@ def run_secret_additive():
 
 			# check if is a number
 			try:
-				# handle fractional
+
 				number = int(user_input)
 
-				if number < 0:
-					print("\nInput integer must be positive and a prime numer")
+				if number < 1:
+					print("\nInput integer must be positive!")
 				elif number < 3:
 					print("\nNot enough prime numbers exists that are less than",str(number))
 				else:
